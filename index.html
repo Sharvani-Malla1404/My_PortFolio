@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Malla Sharvani</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 100px;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .home-image img
+        {
+            width: 500px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+        }
+        #home {
+             background:linear-gradient(to right,#ff9966,#ff5e62); 
+             color: white;
+            }
+            #about {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    color: white;
+    padding: 60px 80px; /* Adjusted padding */
+    min-height: 60vh; /* Set a proper height */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Smooth rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+#about h2 {
+    font-size: 2em; /* Increase heading size */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 2px; /* Improve readability */
+}
+
+#about p {
+    font-size: 1.2em; /* Slightly increase font size */
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+     #academic {
+    background: #90ee90;
+    padding: 40px; /* Further reduced padding */
+    min-height: 50vh; /* Decreased height */
+}
+
+         #projects {
+             background:linear-gradient(to right,#f7b733,#fc4a1a); 
+             color: white;
+            }
+        #contact {
+             background: linear-gradient(to right,#3a1c71,#d76d77,#ffaf7b);
+             color: white;
+            }
+            @media(max-width:768px)
+            {
+                nav ul{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#academic">Academic Details</a></li>
+            <li><a href="#projects">Internships & Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="home-image"><img src="my pic.jpg" alt="Your Picture"></div>
+        <p>Hi, I'm Malla Sharvani, a dedicated and hardworking individual passionate about technology.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and dedicated individual with a strong interest in technology and problem-solving.  
+        With a background in Computer Science and hands-on experience in programming, I constantly strive to enhance my skills  
+        and stay updated with the latest industry trends.</p>  
+    
+        <p>My strengths lie in my ability to adapt, learn quickly, and tackle challenges with a positive attitude.  
+        I am always eager to explore new technologies and apply my knowledge to real-world applications.  
+        My goal is to build innovative solutions that make a difference.</p>
+    </section>
+    
+    <section id="academic">
+        <h2>Academic Details</h2>
+        <p>B.Tech from Dadi Institute of Engineering and Technology (73%).</p>
+        <p>Intermediate from Junior A P Model College (84%).</p>
+        <p>SSC from Sri Vignan Public School (95%).</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Internships & Projects</h2>
+        <p><strong>Project:</strong> Plant Detection System using Deep Learning.</p>
+        <p>Developed a system to identify plant species using AI and image processing techniques.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mail:sharvanimalla1404@gmail.com">sharvanimalla1404@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/malla-sharvani-4877b3243">View Profile</a></p>
+    </section>
+    
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
