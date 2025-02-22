@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,28 +7,37 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        nav { background: #333; padding: 10px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
-        .menu-toggle { display: none; font-size: 24px; color: white; cursor: pointer; padding: 10px; }
+        nav { background: #333; padding: 10px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; display: flex; justify-content: center; align-items: center; }
+        .menu-toggle { 
+            display: none; 
+            font-size: 24px; 
+            color: white; 
+            cursor: pointer; 
+            padding: 10px; 
+            position: absolute; 
+            right: 15px; /* Move to the right corner */
+            top: 10px;
+        }
         nav ul { list-style: none; display: flex; justify-content: center; padding: 0; margin: 0; }
         nav ul li { margin: 0 15px; }
-        nav ul li a { color: white; text-decoration: none; font-size: 18px; }section { padding: 100px 10%; text-align: center; min-height: 100vh; }
-    .home-image img { width: 80%; max-width: 300px; height: auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0, 0.2); }
-    #home { background:linear-gradient(to right,#ff9966,#ff5e62); color: white; }
-    #about { background: linear-gradient(to right, #56ccf2, #2f80ed); color: white; padding: 60px 5%; min-height: 60vh; text-align: center; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
-    #academic { background: #90ee90; padding: 40px 5%; min-height: 50vh; }
-    #projects { background:linear-gradient(to right,#f7b733,#fc4a1a); color: white; }
-    #contact { background: linear-gradient(to right,#3a1c71,#d76d77,#ffaf7b); color: white; }
+        nav ul li a { color: white; text-decoration: none; font-size: 18px; }
+        section { padding: 100px 10%; text-align: center; min-height: 100vh; }
+        .home-image img { width: 80%; max-width: 300px; height: auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0, 0.2); }
+        #home { background:linear-gradient(to right,#ff9966,#ff5e62); color: white; }
+        #about { background: linear-gradient(to right, #56ccf2, #2f80ed); color: white; padding: 60px 5%; min-height: 60vh; text-align: center; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        #academic { background: #90ee90; padding: 40px 5%; min-height: 50vh; }
+        #projects { background:linear-gradient(to right,#f7b733,#fc4a1a); color: white; }
+        #contact { background: linear-gradient(to right,#3a1c71,#d76d77,#ffaf7b); color: white; }
 
-    @media (max-width: 768px) {
-        nav { flex-direction: column; align-items: center; }
-        .menu-toggle { display: block; }
-        nav ul { flex-direction: column; align-items: center; display: none; width: 100%; }
-        nav ul.show { display: flex; }
-        section { padding: 80px 5%; }
-        .home-image img { width: 100%; }
-    }
-</style>
-
+        @media (max-width: 768px) {
+            nav { flex-direction: column; align-items: center; }
+            .menu-toggle { display: block; }
+            nav ul { flex-direction: column; align-items: center; display: none; width: 100%; }
+            nav ul.show { display: flex; }
+            section { padding: 80px 5%; }
+            .home-image img { width: 100%; }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -39,48 +49,49 @@
             <li><a href="#projects">Internships & Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
-    </nav><section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <div class="home-image"><img src="my pic.jpg" alt="Your Picture"></div>
-    <p>Hi, I'm Malla Sharvani, a dedicated and hardworking individual passionate about technology.</p>
-</section>
+    </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate and dedicated individual with a strong interest in technology and problem-solving.</p>
-</section>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="home-image"><img src="my pic.jpg" alt="Your Picture"></div>
+        <p>Hi, I'm Malla Sharvani, a dedicated and hardworking individual passionate about technology.</p>
+    </section>
 
-<section id="academic">
-    <h2>Academic Details</h2>
-    <p>B.Tech from Dadi Institute of Engineering and Technology (73%).</p>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and dedicated individual with a strong interest in technology and problem-solving.</p>
+    </section>
 
-<section id="projects">
-    <h2>Internships & Projects</h2>
-    <p><strong>Project:</strong> Plant Detection System using Deep Learning.</p>
-    <p>Developed a system to identify plant species using AI and image processing techniques.</p>
-</section>
+    <section id="academic">
+        <h2>Academic Details</h2>
+        <p>B.Tech from Dadi Institute of Engineering and Technology (73%).</p>
+    </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:sharvanimalla1404@gmail.com">sharvanimalla1404@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/malla-sharvani-4877b3243">View Profile</a></p>
-</section>
+    <section id="projects">
+        <h2>Internships & Projects</h2>
+        <p><strong>Project:</strong> Plant Detection System using Deep Learning.</p>
+        <p>Developed a system to identify plant species using AI and image processing techniques.</p>
+    </section>
 
-<script>
-    function toggleMenu() {
-        document.querySelector("nav ul").classList.toggle("show");
-    }
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:sharvanimalla1404@gmail.com">sharvanimalla1404@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/malla-sharvani-4877b3243">View Profile</a></p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("show");
+        }
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                document.querySelector("nav ul").classList.remove("show");
             });
-            document.querySelector("nav ul").classList.remove("show");
         });
-    });
-</script>
-
+    </script>
 </body>
 </html>
